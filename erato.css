@@ -1,0 +1,35 @@
+.center {
+  text-align: center; }
+
+.license {
+  border-bottom: 0px; }
+
+body {
+  margin: 5% auto;
+  padding: 0 10px;
+  max-width: 650px;
+  background: #4C4C4C;
+  color: #F87C7C;
+  text-shadow: 0 1px 0 #8D0000;
+  font-family: "Courier new";
+  font-size: 18px;
+  line-height: 1.6; }
+
+code {
+  background: #373B41; }
+
+a {
+  color: #F87C7C;
+  border-bottom: 1px solid #F87C7C;
+  text-decoration: none; }
+
+a:hover {
+  border-bottom: 0; }
+
+h1,
+h2 {
+  line-height: 1.3; }
+
+footer {
+  padding-top: 5%;
+  font-size: 12px; }
