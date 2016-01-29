@@ -16,7 +16,8 @@ body {
   line-height: 1.6; }
 
 code {
-  background: #373B41; }
+  background: #373B41;
+  font-family: monospace; }
 
 a {
   color: #F87C7C;
@@ -33,3 +34,5 @@ h2 {
 footer {
   padding-top: 5%;
   font-size: 12px; }
+
+/*# sourceMappingURL=erato.css.map */
