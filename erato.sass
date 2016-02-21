@@ -1,10 +1,13 @@
 $BG_COLOR: #4C4C4C
-$CODE_BG: #373B41
 $FONT_COLOR: #F87C7C
 $FONT_SHADOW: #8D0000
 $FONT: georgia, serif
-$CODE_FONT: monospace
 $LINK_COLOR: #F87C7C
+
+$CODE_BG: #373B41
+$CODE_BORDER: 3px
+$CODE_FONT: monospace
+$CODE_SIZE: 85%
 
 // Center text
 .c
@@ -13,6 +16,44 @@ $LINK_COLOR: #F87C7C
 // Style for license information
 .l
   border-bottom: 0px
+
+// Style for textareas
+.t
+  width: 100%
+  resize: none
+
+// Background styling used in several classes otherwise
+.bg
+  background: $CODE_BG
+  border: none
+
+// Style for inputs
+.i
+  padding: 9px 9px
+
+// Font style used in several classes otherwise
+.f
+  font-family: $CODE_FONT
+  color: $FONT_COLOR
+  text-shadow: 0 1px 0 $FONT_SHADOW
+  font-size: 18px
+
+// Button styling
+.b
+  font-family: $FONT
+  padding: 3px
+  cursor: pointer
+  box-shadow: 1px 1px 0 #272B31
+
+// Center object such as div
+.co
+  margin: 1% auto
+  width: 100px
+
+// Label style
+.la
+  margin-bottom: 1%
+
 
 body
   margin: 5% auto
@@ -25,9 +66,24 @@ body
   font-size: 18px
   line-height: 1.6
 
+pre
+  background: $CODE_BG
+  word-wrap: normal
+  border-radius: $CODE_BORDER
+  font-size: $CODE_SIZE
+  padding: 9px
+
 code
   background: $CODE_BG
   font-family: $CODE_FONT
+  padding: 0.2em 0
+  font-size: $CODE_SIZE
+  border-radius: $CODE_BORDER
+
+code::before,
+code::after
+  letter-spacing: -0.2em
+  content: "\00a0"
 
 a
   color: $LINK_COLOR
@@ -38,7 +94,8 @@ a:hover
   border-bottom: 0
 
 h1,
-h2
+h2,
+h3
   line-height: 1.3
 
 footer
