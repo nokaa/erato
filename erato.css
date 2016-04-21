@@ -1,9 +1,12 @@
-@charset "UTF-8";
 .c {
   text-align: center; }
 
 .l {
   border-bottom: 0px; }
+
+.l img {
+  width: unset;
+  padding: 0; }
 
 .t {
   width: 100%;
@@ -67,7 +70,7 @@ code {
 code::before,
 code::after {
   letter-spacing: -0.2em;
-  content: " "; }
+  content: "\00a0"; }
 
 a {
   color: #F87C7C;
@@ -89,5 +92,3 @@ h3 {
 footer {
   padding-top: 5%;
   font-size: 12px; }
-
-/*# sourceMappingURL=erato.css.map */
